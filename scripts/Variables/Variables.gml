@@ -14,7 +14,7 @@ function variables(){
 	grav = 0.5;	// base gravity for reset
 	grav_direction = 270 // 0=Right, 90=Up, 180=Left, 270=Down
 	smulti = 2.5;
-	jump = 15;
+	jump = 20;
 	air = 4;
 	resistance = 0.8;
 	air_resistance = 0.82;
@@ -31,4 +31,5 @@ function variables(){
 	
 	//OTHER
 	collidables = [oColl_]
+	global.inventory = [];
 }
