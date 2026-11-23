@@ -1,4 +1,4 @@
-#Blackhole Heart
+# Blackhole Heart
 
 **Blackhole Heart** is a wild metroidvania styled 2d platformer, with a focus on *death centric* mechanics.
 
