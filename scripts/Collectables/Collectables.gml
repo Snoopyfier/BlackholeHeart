@@ -1,9 +1,9 @@
 //FUNCTIONS
 
 function add_item(){
-	if place_meeting(x, y, oPlayer) and collected == 0
+	if place_meeting(x, y, oPlayer) and collected == 0 and array_length(global.inventory) < 2
 	{
-		array_push(global.inventory, target_item[image_index])
+		array_push(global.inventory, image_index)
 		collected = 1;
 	}
 }
