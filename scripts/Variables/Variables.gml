@@ -25,11 +25,16 @@ function variables(){
 	//KEYBINDS
 	keybind = [
 	//MOVEMENT KEYS
-	"W", "A", "S", "D"
+	"W", "A", "S", "D",
 	//ABILITY KEYS
+	"E"
 	]
 	
 	//OTHER
 	collidables = [oColl_]
+	
+	//INVENTORY
 	global.inventory = [];
+	inve_status = -1;
+
 }

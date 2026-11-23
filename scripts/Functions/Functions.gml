@@ -42,7 +42,9 @@ function call_key(key) {
 	if key == "left" {return keybind[1]}
 	if key == "down" {return keybind[2]}
 	if key == "right" {return keybind[3]}
+	if key == "e" {return keybind[4]}
 }
+
 
 function key_press(key){
 	return keyboard_check(ord(call_key(key)))
