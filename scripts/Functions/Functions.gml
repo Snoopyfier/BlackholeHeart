@@ -27,12 +27,14 @@ function collide_reset(rep){
 }
 	
 	//IMAGE ANGLING
-function angle_for_grav(){
+/*TO BE FIXED
+function angle_for_grav(){ 
 	if grav_direction == 0{return 180;}
 	if grav_direction == 90{return 90;}
 	if grav_direction == 180{return 270;}
 	if grav_direction == 270{return 0;}
 }
+*/
 
 	//KEYBINDS AND KEYPRESSING
 function call_key(key) {
@@ -98,6 +100,7 @@ function move(){
 // FUNCTIONS FOR DRAWING
 
 function image_point(){
-	image_angle = angle_for_grav()
-	
+	if xspeed > 0 {prev_angle = 6;}
+	else if xspeed < 0 {prev_angle = -6;}
+	return prev_angle;
 }

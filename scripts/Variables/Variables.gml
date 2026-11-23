@@ -2,8 +2,11 @@ function variables(){
 	//ANIMATION RESET
 	frame = 1;
 	image_index = frame;
+	prev_angle = 0;
 	
 	//MOVEMENT RESET
+	x = 704
+	y = 35
 	xspeed = 0;
 	yspeed = 0;
 	grav = 0.5;	// base gravity for reset
