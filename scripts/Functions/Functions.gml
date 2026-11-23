@@ -111,7 +111,11 @@ function image_point(){
 	return prev_angle;
 }
 
-// CAMERA FUNCTIONS
+//ROOM FUNCTIONS
+function move_room()
+{
+	if room ==  level1 and x > room_width{room_goto_next()}
+}
 
 //POWERUP FUNCTIONS
 function call_powerup(item){
@@ -124,9 +128,14 @@ function call_powerup(item){
 				yspeed = set_yspeed;
 				xspeed = set_xspeed;
 			}
-			else{influence = -1; array_delete(global.inventory, 0, 1)}
+			else{influence = -1; array_delete(global.inventory, 0, 1);}
 		}
-			
+		if influence == 1
+		{
+			yspeed = set_yspeed;
+			xspeed = set_xspeed;
+			if colliding(x + image_point() / 6, y) == 1{influence = -1}
+		}
 	}
 	if item == 0 
 	{
@@ -137,7 +146,13 @@ function call_powerup(item){
 			influence = 0;
 		}
 	}
-
+	if item == 1 
+	{
+		set_xspeed = 10 * image_point();
+		set_yspeed = 0;
+		influence = 1;
+		array_delete(global.inventory, 0, 1);
+	}
 }
 
 function use_powerup(){
