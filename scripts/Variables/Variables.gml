@@ -21,13 +21,14 @@ function variables(){
 	targetX = x;
 	targetY = y;
 	//COLLECTABLES RESET
+	influence = -1;
 	
 	//KEYBINDS
 	keybind = [
 	//MOVEMENT KEYS
 	"W", "A", "S", "D",
 	//ABILITY KEYS
-	"E"
+	"E", "Q"
 	]
 	
 	//OTHER

@@ -43,6 +43,7 @@ function call_key(key) {
 	if key == "down" {return keybind[2]}
 	if key == "right" {return keybind[3]}
 	if key == "e" {return keybind[4]}
+	if key == "q" {return keybind[5]}
 }
 
 
@@ -80,6 +81,9 @@ function move(){
 	if grav_direction == 0 {yspeed -= hspe(smulti); yspeed *= calres(); xspeed -= vspe(jump) - grav;} //Right
 	if grav_direction == 180 {yspeed += hspe(smulti); yspeed *= calres(); xspeed += vspe(jump) - grav;} //Left
 	
+	//Powerup Check
+	call_powerup(-1);
+	
 	//Collision check & Movement
 	temp = abs(xspeed) + abs(yspeed);
 	repeat temp
@@ -110,4 +114,35 @@ function image_point(){
 // CAMERA FUNCTIONS
 
 //POWERUP FUNCTIONS
+function call_powerup(item){
+	if item == -1
+	{
+		if influence == 0
+		{
+			if colliding(x + image_point() / 6, y)
+			{
+				yspeed = set_yspeed;
+				xspeed = set_xspeed;
+			}
+			else{influence = -1; array_delete(global.inventory, 0, 1)}
+		}
+			
+	}
+	if item == 0 
+	{
+		if colliding(x + image_point() / 6, y)
+		{
+			set_xspeed = 0;
+			set_yspeed = -30;
+			influence = 0;
+		}
+	}
 
+}
+
+function use_powerup(){
+	if keyboard_check_pressed(ord("E")) == 1 and array_length(global.inventory) > 0
+	{
+		call_powerup(global.inventory[0])
+	}
+}
