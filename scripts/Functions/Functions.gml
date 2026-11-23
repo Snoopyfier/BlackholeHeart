@@ -104,3 +104,5 @@ function image_point(){
 	else if xspeed < 0 {prev_angle = -6;}
 	return prev_angle;
 }
+
+// CAMERA FUNCTIONS

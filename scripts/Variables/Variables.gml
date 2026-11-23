@@ -4,9 +4,11 @@ function variables(){
 	image_index = frame;
 	prev_angle = 0;
 	
+	//CAMERA
+	camSpeed = 0.1;
+	
+	
 	//MOVEMENT RESET
-	x = 704
-	y = 35
 	xspeed = 0;
 	yspeed = 0;
 	grav = 0.5;	// base gravity for reset
@@ -16,6 +18,8 @@ function variables(){
 	air = 4;
 	resistance = 0.8;
 	air_resistance = 0.82;
+	targetX = x;
+	targetY = y;
 	//COLLECTABLES RESET
 	
 	//KEYBINDS
