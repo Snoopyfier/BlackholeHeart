@@ -4,3 +4,4 @@ image_speed = 0;
 image_alpha = 1;
 initX = x;
 initY = y;
+dir = 1;
