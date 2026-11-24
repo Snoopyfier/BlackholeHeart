@@ -27,13 +27,13 @@ function place_powers(alterX, alterY){
 		placeY = camera_get_view_y(view_camera[0])
 		if i == 0
 		{
-			draw_sprite_ext(sHints, 0, placeX + alterX - 5.25 , placeY + alterY - 5.25, 3.3, 3.3, 0, c_white, 1);
-			draw_sprite_ext(sHints, 1, placeX + alterX + 30, placeY + alterY + 120, 1.5, 1.5, 0, c_white, 1);
-			draw_sprite_ext(sCollectables, global.inventory[i], placeX + alterX, placeY + alterY, 3, 3, 0, c_white, 1);
+			draw_sprite_ext(sHints, 0, placeX + alterX - 7 , placeY + alterY - 7, 4.4, 4.4, 0, c_white, 1);
+			draw_sprite_ext(sHints, 1, placeX + alterX + 40, placeY + alterY + 160, 2, 2, 0, c_white, 1);
+			draw_sprite_ext(sCollectables, global.inventory[i], placeX + alterX, placeY + alterY, 4, 4, 0, c_white, 1);
 		}
 		else
 		{
-			draw_sprite_ext(sCollectables, global.inventory[i], placeX + alterX + 150 * i, placeY + alterY, 3, 3, 0, c_white, 1);
+			draw_sprite_ext(sCollectables, global.inventory[i], placeX + alterX + 200 * i, placeY + alterY, 4, 4, 0, c_white, 1);
 		}
 	}
 }
