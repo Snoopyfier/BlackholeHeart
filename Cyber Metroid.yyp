@@ -10,7 +10,6 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Collectable Scripts","folderPath":"folders/Collectable Scripts.yy","name":"Collectable Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player Scripts","folderPath":"folders/Player Scripts.yy","name":"Player Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -27,12 +26,14 @@
   "resources":[
     {"id":{"name":"oColl_","path":"objects/oColl_/oColl_.yy",},},
     {"id":{"name":"oCollectables","path":"objects/oCollectables/oCollectables.yy",},},
+    {"id":{"name":"oDiscs","path":"objects/oDiscs/oDiscs.yy",},},
+    {"id":{"name":"oHints","path":"objects/oHints/oHints.yy",},},
     {"id":{"name":"oLava","path":"objects/oLava/oLava.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"id":{"name":"level2","path":"rooms/level2/level2.yy",},},
-    {"id":{"name":"Collectables","path":"scripts/Collectables/Collectables.yy",},},
+    {"id":{"name":"level3","path":"rooms/level3/level3.yy",},},
     {"id":{"name":"Functions","path":"scripts/Functions/Functions.yy",},},
     {"id":{"name":"inventory_handling","path":"scripts/inventory_handling/inventory_handling.yy",},},
     {"id":{"name":"Variables","path":"scripts/Variables/Variables.yy",},},
@@ -40,6 +41,7 @@
     {"id":{"name":"sColl_","path":"sprites/sColl_/sColl_.yy",},},
     {"id":{"name":"sCollectables","path":"sprites/sCollectables/sCollectables.yy",},},
     {"id":{"name":"sDiscs","path":"sprites/sDiscs/sDiscs.yy",},},
+    {"id":{"name":"sHints","path":"sprites/sHints/sHints.yy",},},
     {"id":{"name":"sLava","path":"sprites/sLava/sLava.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sTransition","path":"sprites/sTransition/sTransition.yy",},},
@@ -49,6 +51,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
+    {"roomId":{"name":"level3","path":"rooms/level3/level3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

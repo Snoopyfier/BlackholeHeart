@@ -12,8 +12,19 @@ if phase == 0
 		scale = 0.7;
 		spe = 0;
 		phase = 1;
-		if trans == 1{room_goto_next();}
-		else{room_restart()}
+		if trans == 1
+		{
+
+			global.inventory_reset = variable_clone(global.inventory)
+
+
+			room_goto_next();
+		}
+		else
+		{	
+			global.inventory = variable_clone(global.inventory_reset)
+			room_restart();
+		}
 	}
 }
 else

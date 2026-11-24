@@ -115,6 +115,7 @@ function image_point(){
 function move_room()
 {
 	if room ==  level1 and x > room_width and oTransition.trans == 0{oTransition.trans = 1}
+	if room == level2 and y > room_height and oTransition.trans == 0{oTransition.trans = 1}
 }
 
 function dead_collide(_x, _y){

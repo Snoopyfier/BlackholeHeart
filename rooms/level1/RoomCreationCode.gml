@@ -12,3 +12,7 @@ vh = camera_get_view_height(view_camera[0]);
 	camera_set_view_pos(view_camera[0],
 	    clamp(oPlayer.x - vw / 2, 0, max(0, room_width - vw)),
 	    clamp(oPlayer.y - vh / 2, 0, max(0, room_height - vh)));
+		
+global.inventory = [];
+global.inventory_reset = global.inventory;
+global.discs = []

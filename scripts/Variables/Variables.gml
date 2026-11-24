@@ -36,7 +36,5 @@ function variables(){
 	deadly = [oLava]
 	
 	//INVENTORY
-	global.inventory = [];
 	inve_status = -1;
-
 }
