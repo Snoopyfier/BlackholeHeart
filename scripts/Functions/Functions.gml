@@ -114,7 +114,7 @@ function image_point(){
 //ROOM FUNCTIONS
 function move_room()
 {
-	if room ==  level1 and x > room_width{room_goto_next()}
+	if room ==  level1 and x > room_width and oTransition.trans == 0{oTransition.trans = 1}
 }
 
 //POWERUP FUNCTIONS
