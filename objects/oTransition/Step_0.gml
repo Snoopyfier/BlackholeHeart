@@ -12,20 +12,23 @@ if phase == 0
 		scale = 0.7;
 		spe = 0;
 		phase = 1;
-		room_goto_next();
+		if trans == 1{room_goto_next();}
+		else{room_restart()}
 	}
 }
-else 
-{
-	scale -= spe;
-	if scale <= 0
+else
 	{
-		scale = 0;
-		spe = 0;
-		phase =0;
-		trans = 0;
+		scale -= spe;
+		if scale <= 0
+		{
+			scale = 0;
+			spe = 0;
+			phase =0;
+			trans = 0;
+		}
 	}
-}
+
+		
 
 image_xscale = scale;
 image_yscale = scale;

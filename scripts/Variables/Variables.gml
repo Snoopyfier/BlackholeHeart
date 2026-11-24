@@ -33,6 +33,7 @@ function variables(){
 	
 	//OTHER
 	collidables = [oColl_]
+	deadly = [oLava]
 	
 	//INVENTORY
 	global.inventory = [];

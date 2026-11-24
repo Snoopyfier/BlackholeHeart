@@ -117,6 +117,24 @@ function move_room()
 	if room ==  level1 and x > room_width and oTransition.trans == 0{oTransition.trans = 1}
 }
 
+function dead_collide(_x, _y){
+	for (var i = 0; i < array_length(deadly); i += 1)
+	{
+		if place_meeting(_x, _y, deadly[i])
+		{
+			return 1;
+		}
+		else if i == array_length(deadly) - 1
+		{
+			return 0;
+		}
+	}
+}
+
+function die(){
+	if dead_collide(x,y) == 1 and oTransition.trans == 0 {oTransition.trans = 2;}
+}
+
 //POWERUP FUNCTIONS
 function call_powerup(item){
 	if item == -1
