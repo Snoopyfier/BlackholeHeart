@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player Scripts","folderPath":"folders/Player Scripts.yy","name":"Player Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -24,6 +25,7 @@
   },
   "name":"Cyber Metroid",
   "resources":[
+    {"id":{"name":"ArcadeClassic","path":"fonts/ArcadeClassic/ArcadeClassic.yy",},},
     {"id":{"name":"oColl_","path":"objects/oColl_/oColl_.yy",},},
     {"id":{"name":"oCollectables","path":"objects/oCollectables/oCollectables.yy",},},
     {"id":{"name":"oDiscs","path":"objects/oDiscs/oDiscs.yy",},},

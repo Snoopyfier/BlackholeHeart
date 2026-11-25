@@ -14,8 +14,9 @@ function add_item(){
 		collected = 1;
 		if room == level1
 		{
-			//pause = 1;
-			//oTips.hint(image_index)
+			oPlayer.help = image_index + 1;
+			oPlayer.pause = 1;
+			oPlayer.inve_status = 1;
 		}
 	}
 }

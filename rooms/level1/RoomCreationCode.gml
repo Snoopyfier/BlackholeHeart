@@ -16,3 +16,7 @@ vh = camera_get_view_height(view_camera[0]);
 global.inventory = [];
 global.inventory_reset = global.inventory;
 global.discs = []
+
+oPlayer.inve_status = 1;
+oPlayer.help = 3;
+oPlayer.pause = 1
