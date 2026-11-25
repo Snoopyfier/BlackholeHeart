@@ -175,7 +175,7 @@ function call_powerup(item){
 		array_delete(global.inventory, 0, 1);
 	}
 	
-	if item == 2 and oTransition.trans == 0{oTransition.trans = 1;}
+	if item == 2 and oTransition.trans == 0{oTransition.trans = 1; oTransition.beep = 0; array_delete(global.inventory, 0, 1);}
 }
 
 function use_powerup(){

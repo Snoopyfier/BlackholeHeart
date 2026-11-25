@@ -14,22 +14,24 @@ function handle_inve(intx, inty){
 	if help == 1 
 	{
 		draw_set_font(ArcadeClassic);
-		draw_text(vx + intx + 50 , vy + inty + 100, "To use this powerup go up against a wall")
-		draw_text(vx + intx + 50 , vy + inty + 200, "and press E to use")
-		draw_text(vx + intx + 50 , vy + inty + 400, "Press P to start again")
+		draw_text(vx + intx + 50 , vy + inty + 100, "To  use  this  powerup  go  up  against  a  wall")
+		draw_text(vx + intx + 50 , vy + inty + 200, "and  press  E  to  use")
+		draw_text(vx + intx + 50 , vy + inty + 400, "Press  P  to  continue!")
 	}
 	else if help == 2
 	{
 		draw_set_font(ArcadeClassic);
-		draw_text(vx + intx + 50 , vy + inty + 100, "Press E to dash")
-		draw_text(vx + intx + 50 , vy + inty + 400, "Press P to start again")
+		draw_text(vx + intx + 50 , vy + inty + 100, "Press  E  to  dash")
+		draw_text(vx + intx + 50 , vy + inty + 400, "Press  P  to  continue")
 	}
 	else if help == 3
 	{
 		draw_set_font(ArcadeClassic);
-		draw_text(vx + intx + 50 , vy + inty + 100, "Make your way to the purple bar!")
-		draw_text(vx + intx + 50 , vy + inty + 200, "its in the top left corner")
-		draw_text(vx + intx + 50 , vy + inty + 400, "Press P to start again")
+		draw_text(vx + intx + 50 , vy + inty + 100, "Make  your  way  to  the  purple  bar!")
+		draw_text(vx + intx + 50 , vy + inty + 200, "its  in  the  top   right   corner")
+		draw_text(vx + intx + 50 , vy + inty + 300, "You  might  need  multiple  attempts  at")
+		draw_text(vx + intx + 50 , vy + inty + 400, "each  level  press  r  if  you  get  stuck")
+		draw_text(vx + intx + 50 , vy + inty + 550, "Press  P  to  start!")
 	}
 }
 
