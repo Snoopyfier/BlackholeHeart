@@ -14,3 +14,4 @@ vh = camera_get_view_height(view_camera[0]);
 	    clamp(oPlayer.y - vh / 2, 0, max(0, room_height - vh)));
 		
 oTransition.beep = 1;
+global.inventory = [];
