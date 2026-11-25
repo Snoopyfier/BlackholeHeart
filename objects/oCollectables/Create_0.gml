@@ -12,6 +12,11 @@ function add_item(){
 	{
 		array_push(global.inventory, image_index)
 		collected = 1;
+		if room == level1
+		{
+			//pause = 1;
+			//oTips.hint(image_index)
+		}
 	}
 }
 

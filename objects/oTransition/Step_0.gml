@@ -20,8 +20,11 @@ if phase == 0
 
 			global.inventory_reset = variable_clone(global.inventory)
 
-
+			show_debug_message(room_get_name(room) + " x=" + string(x) + " y=" + string(y) + " room_h=" + string(room_height));
+			if beep == 0
+			{
 			room_goto_next();
+			}
 		}
 		else
 		{	

@@ -114,8 +114,10 @@ function image_point(){
 //ROOM FUNCTIONS
 function move_room()
 {
-	if room ==  level1 and x > room_width and oTransition.trans == 0{oTransition.trans = 1}
-	if room == level2 and y > room_height and oTransition.trans == 0{oTransition.trans = 1}
+	if x > room_width and oTransition.trans == 0{oTransition.trans = 1; }
+	if y > room_height and oTransition.trans == 0{oTransition.trans = 1;}
+	if x < 0 and oTransition.trans == 0 and room == level3{oTransition.trans = 1;}
+	if y < 0 and oTransition.trans == 0{oTransition.trans = 1; oTransition.beep = 0;}
 }
 
 function dead_collide(_x, _y){
@@ -172,6 +174,8 @@ function call_powerup(item){
 		influence = 1;
 		array_delete(global.inventory, 0, 1);
 	}
+	
+	if item == 2 and oTransition.trans == 0{oTransition.trans = 1;}
 }
 
 function use_powerup(){

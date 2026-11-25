@@ -17,6 +17,8 @@ function open_inve(){
 	if keyboard_check_pressed(ord("P")) == 1
 	{
 		inve_status = 0 - inve_status;
+		pause += 1
+		if pause > 1{pause = 0}
 	}
 }
 

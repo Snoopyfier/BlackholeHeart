@@ -8,4 +8,3 @@ else
 }
 
 movement(40)
-show_debug_message(global.discs)
